@@ -1,3 +1,9 @@
-/**
- * Created by romashka50 on 26.03.17.
- */
+import React from 'react';
+
+const VideoItem = (props) => (
+  <li>
+    Video
+  </li>
+);
+
+export default VideoItem;
