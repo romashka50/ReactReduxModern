@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VideoItem = ({ video }) => {
+const VideoItem = ({ video, onSelectVideo }) => {
   const {
     snippet: {
       thumbnails: {
@@ -11,16 +11,19 @@ const VideoItem = ({ video }) => {
   } = video;
 
   return (
-    <li className="list-group-item">
-      <div className="video-list media">
-        <div className="media-left">
-          <img alt="" className="media-object" src={url}/>
+    <li
+      className="list-group-item"
+      onClick={() => {onSelectVideo(video)}}
+    >
+      <div className="video-list media" >
+        <div className="media-left" >
+          <img alt="" className="media-object" src={url} />
         </div>
-      </div>
 
-      <div className="media-body">
-        <div className="media-heading">
-          {title}
+        <div className="media-body" >
+          <div className="media-heading" >
+            {title}
+          </div>
         </div>
       </div>
     </li>
