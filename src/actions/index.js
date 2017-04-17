@@ -11,6 +11,6 @@ export default function fetchWearher(city) {
 
   return {
     type: FETCH_WEATHER,
-    peyload: request,
+    payload: request,
   };
 }
