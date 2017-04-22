@@ -3,15 +3,11 @@ import { Route, IndexRoute } from 'react-router';
 
 import App from './components/app';
 import PostsList from './components/posts-index';
-
-const Greeting = () => (
-  <div>
-    Hello There!
-  </div>
-);
+import PostsNew from './components/posts-new';
 
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={PostsList} />
+    <Route path="posts/new" component={PostsNew} />
   </Route>
 );
