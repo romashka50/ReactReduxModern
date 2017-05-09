@@ -1,6 +1,6 @@
 /* eslint-disable */
 import { renderComponent, expect } from '../test_helper';
-import CommentBox from '../../src/components/comments-box';
+import CommentBox from '../../src/components/comments-list';
 
 describe('CommentList', () => {
   let component;
