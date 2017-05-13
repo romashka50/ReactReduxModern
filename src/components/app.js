@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
-import CommentBox from './comments-box';
-import CommentList from './comments-list';
+import Header from './header';
 
 export default class App extends Component {
   render() {
     return (
       <div>
-        <CommentBox custom={2} />
-        <CommentList />
+        <Header />
       </div>
     );
   }

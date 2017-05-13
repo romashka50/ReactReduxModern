@@ -9,11 +9,7 @@ describe('App', () => {
     component = renderComponent(App);
   });
 
-  it('shows the comment box', () => {
-    expect(component.find('.comment-box')).to.exist;
-  });
-
-  it('shows the comment lis', () => {
-    expect(component.find('.comment-list')).to.exist;
+  it('shows the header', () => {
+    expect(component.find('.navbar')).to.exist;
   });
 });
