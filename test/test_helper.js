@@ -16,11 +16,12 @@ global.window = new JSDOM('<!doctype html><html><body></body></html>').window;
 global.document = global.window.document;
 
 const $ = jquery(global.window);
+const context = {};
 
 function renderComponent(ComponentClass, props, state) {
   const componentInstance = TestUtis.renderIntoDocument(
     <Provider store={createStore(reducers, state)}>
-      <Router>
+      <Router context={context}>
         <ComponentClass {...props} />
       </Router>
     </Provider >,

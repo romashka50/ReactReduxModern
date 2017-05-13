@@ -1,8 +1,8 @@
-import { SAVE_COMMENT } from './types';
+import { CHANGE_AUTH } from './types';
 
-export const saveComment = comment => ({
-  type: SAVE_COMMENT,
-  payload: comment,
+export const authenticate = isLoggedIn => ({
+  type: CHANGE_AUTH,
+  payload: isLoggedIn,
 });
 
-export default saveComment;
+export default authenticate;
