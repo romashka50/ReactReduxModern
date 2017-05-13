@@ -9,7 +9,7 @@ describe('Authentication Reducer', () => {
     expect(auth).to.be.false;
   });
 
-  it('has handel AUTH:CHANGE payload', () => {
+  it('has handel actions with AUTH:CHANGE type', () => {
     const action = {
       type: CHANGE_AUTH,
       payload: true,
