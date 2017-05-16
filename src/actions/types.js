@@ -1,3 +1,3 @@
-export const CHANGE_AUTH = 'AUTH:CHANGE';
+export const FETCH_USERS = 'USERS:FETCH';
 
-export default CHANGE_AUTH;
+export default FETCH_USERS;
