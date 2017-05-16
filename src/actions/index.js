@@ -1,8 +1,12 @@
-import { CHANGE_AUTH } from './types';
+import { FETCH_USERS } from './types';
 
-export const authenticate = isLoggedIn => ({
-  type: CHANGE_AUTH,
-  payload: isLoggedIn,
+export const fetchUsers = isLoggedIn => ({
+  type: FETCH_USERS,
+  payload: [
+    { name: 'Ivan' },
+    { name: 'Petya' },
+    { name: 'Vasya' },
+  ],
 });
 
-export default authenticate;
+export default fetchUsers;
