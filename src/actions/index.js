@@ -1,12 +1,13 @@
+import axios from 'axios';
 import { FETCH_USERS } from './types';
 
-export const fetchUsers = isLoggedIn => ({
-  type: FETCH_USERS,
-  payload: [
-    { name: 'Ivan' },
-    { name: 'Petya' },
-    { name: 'Vasya' },
-  ],
-});
+export const fetchUsers = () => {
+  const request = axios.get('https://jsonplaceholder.typicode.com/users');
+
+  return {
+    type: FETCH_USERS,
+    payload: request,
+  };
+};
 
 export default fetchUsers;
